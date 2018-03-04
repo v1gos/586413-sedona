@@ -1,94 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+   <head>
+      <meta charset="utf-8">
+      <title>HTML Academy: Седона</title>
+   </head>
+   <body>
       <header class="main-header">
-          <nav class="main-navigation">
--                  <img src="url:logo" alt="Логотип Седона">
-              <ul class="header-menu">
-                <li><a class="link" href="info">информация</a></li>
-                <li><a class="link" href="media">фото и видео</a></li>
-                <li><a class="link" href="map">карта штата</a></li>
-                <li><a class="link" href="inner.html">гостиницы</a></li>    
-              </ul>
-          </nav>
+         <nav class="main-navigation">
+            <img src="url:logo" alt="Логотип Седона">
+            <ul class="header-menu">
+               <li><a class="menu-link" href="info">информация</a></li>
+               <li><a class="menu-link" href="media">фото и видео</a></li>
+               <li><a class="menu-link" href="map">карта штата</a></li>
+               <li><a class="menu-link" href="inner.html">гостиницы</a></li>
+            </ul>
+         </nav>
       </header>
       <main class="main-content">
-          <h1 class="hidden">Туры Седона, Калифорния</h1>
-     <img src="mainpic.jpg" class="main-image" alt="Welcome to the gorgeous Sedona"> <!-- Основная каритка гор -->
-          <div class="promo">
-             <slogan><h2>седона - небольшой городок в аризоне, заслуживающий большего!</h2></slogan>
-              <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-          </div>
-          <div class="reason">
-              <h3>настоящий городок</h3>
-              <p>- №1 -</p>
-              <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
-              <div class="real-city-image"></div><!-- Каритка к №1 -->
-          </div>
-          <div class="reason-illustration-container">
-              <ul class="reason-illustration">
-                  <li class="reason-item">
-                  <h4>жилье</h4>
-                  <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                  </li>
-              <li class="reason-item">
-                  <h4>еда</h4>
-                  <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="reason-item">
-                  <h4>сувениры</h4>
-                  <p>не только китайского, но и местного производства!</p>
-              </li>
-              </ul>
-          </div>
-          <div class="reason">
-              <h3>там есть мост дьявола</h3>
-              <p>- №2 -</p>
-              <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
-              <div class="devil-bridge"></div><!-- Каритка к №2 -->
-          </div>
-          <div class="reason-illustration-container">
-          <ul class="reason-illustration">
-              <li class="reason-item"> <!-- стоит ли задать иные класси ввиду незначительных отличий в стилизации? -->
-                  <h3>небольшая площадь</h3>
-                  <p>- №3 -</p>
-                  <p>все достопримечательности находяться очень близко</p>
-              </li>
-              <li class="reason-item">
-                  <h3>красивая дорога</h3>
-                  <p>- №4 -</p>
-                  <p>ехать в седорну из лас-вегаса совсем не скучно!</p>
-              </li>
-              <li class="reason-item">
-                  <h3>красивая дорога</h3>
-                  <p>- №5 -</p>
-                  <p>большинство едет в гранд каньон и толпиться там</p>
-              </li>
-          </ul> 
-          </div>
-      <div class="purchase-offer">
-          <h3>заинтересовались?</h3>
-          <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиницв седоне</p>
-      </div>
-</main>
+         <h1 class="hidden">Туры Седона, Калифорния</h1>
+         <div class="promo-block"><img src="mainpic.jpg" class="main-image" alt="Welcome to the gorgeous Sedona"> </div>
+         <div class="promo-text">
+            <slogan>
+               <h2>седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+            </slogan>
+            <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+         </div>
+         <div class="reason">
+            <div class="reason-descriptions">
+               <h3>настоящий городок</h3>
+               <p>- №1 -</p>
+               <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="reason-image"></div>
+         </div>
+         <ul class="reason-illustration">
+            <li class="reason-illustration-item">
+               <h4>жилье</h4>
+               <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="reason-illustration-item">
+               <h4>еда</h4>
+               <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="reason-illustration-item">
+               <h4>сувениры</h4>
+               <p>не только китайского, но и местного производства!</p>
+            </li>
+         </ul>
+         <div class="reason">
+            <div class="reason-image"></div>
+            <div class="reason-descriptions">
+               <h3>там есть мост дьявола!</h3>
+               <p>- №2 -</p>
+               <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+            </div>
+         </div>
+         <ul class="reason-other-container">
+            <li class="reason-descriptions">
+               <h3>небольшая площадь</h3>
+               <p>- №3 -</p>
+               <p>все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="reason-descriptions">
+               <h3>красивая дорога</h3>
+               <p>- №4 -</p>
+               <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li class="reason-descriptions">
+               <h3>мало туристов</h3>
+               <p>- №5 -</p>
+               <p>большинство едет в гранд коньон и толпится там</p>
+            </li>
+         </ul>
+         <div class="purchase-offer">
+            <h3 class="viewing-result">заинтересовались?</h3>
+            <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиницв седоне</p>
+         </div>
+      </main>
       <foother class="main-foother">
-          <p>#visitsedona</p>
-          <div class="social-container">
+         <p>#visitsedona</p>
+         <div class="social-container">
             <b>Соцсети</b>
             <a class="social-link" class="social social-tw" href="#"></a>
             <a class="social-link" class="social social-fb" href="#"></a>
             <a class="social-link" class="social social-yt" href="#"></a>
-          </div>
-          <div class="foother-logo">
-          <p>website by</p>
-          <a class="link" href="#">
-              <img src="url:logo" alt="HTML-academy" href="https://htmlacademy.ru">
-          </a>
-          </div>
+         </div>
+         <div class="foother-logo">
+            <p>website by</p>
+            <a class="link" href="#">
+            <img src="url:logo" alt="HTML-academy" href="https://htmlacademy.ru">
+            </a>
+         </div>
       </foother>
-  </body>
+   </body>
 </html>
