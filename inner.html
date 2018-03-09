@@ -18,9 +18,52 @@
       </header>
       <main class="main-content">
          <h1 class="hidden">Отели Седона</h1>
-         <div class="promo-block promo-block-inner"></div>
+         <div class="promo-block promo-block-inner">
+             <ul class="type-checkboxes">
+                 <p>тип жилья:</p>
+                 <li>
+                     <input type="checkbox" name="pool" id="pool-choise">
+                     <label for="pool-choise">бассейн</label>
+                 </li>
+                 <li>
+                     <input type="checkbox" name="parking" id="parking-choise">
+                     <label for="parking-choise">парковка</label>
+                 </li>
+                 <li>
+                     <input type="checkbox" name="wi-fi" id="wi-fi-choise">
+                     <label for="wi-fi-choise">wi-fi</label>
+                 </li>
+             </ul>
+             <ul class="type-checkboxes">
+                 <p>инфраструктура:</p>
+                 <li>
+                     <input type="checkbox" name="hostel" id="hostel-choise">
+                     <label for="hostel-choise">гостиница</label>
+                 </li>
+                 <li>
+                     <input type="checkbox" name="motel" id="motel-choise">
+                     <label for="motel-choise">мотель</label>
+                 </li>
+                 <li>
+                     <input type="checkbox" name="apartment" id="apartment-choise">
+                     <label for="apartment-choise">апартаменты</label>
+                 </li>
+             </ul>
+             <div class="price-form">
+                 <p>стоимость в сутки (р):</p>
+                 <span class="range">
+                     <p>от 0</p>
+                     <p>до 3000</p>
+                 </span>
+                 <input type="range" min="0" max="3000" step="100" value="0">
+                 <input type="submit" value="показать">
+             </div>
+         </div>
          <div class="result">
-            <div class="sort"></div>
+            <div class="sort">
+                <p class="search-result">найдено:</p>
+             
+            </div>
             <div class="hostels-list">
                <article class="hostel">
                   <a class="open-product" href="more-info-amara">
