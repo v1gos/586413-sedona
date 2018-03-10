@@ -19,8 +19,8 @@
       <main class="main-content">
          <h1 class="hidden">Отели Седона</h1>
          <div class="promo-block promo-block-inner">
-            <div class="checkboxes-container">
-               <p>инфраструктура:</p>
+            <fieldset class="checkboxes-container">
+               <legend>инфраструктура:</legend>
                <ul class="type-checkboxes">
                   <li>
                      <input type="checkbox" name="hostel" id="hostel-choise">
@@ -35,9 +35,9 @@
                      <label for="apartment-choise">апартаменты</label>
                   </li>
                </ul>
-            </div>
-            <div class="checkboxes-container">
-               <p>тип жилья:</p>
+            </fieldset>
+            <fieldset class="checkboxes-container">
+               <legend>тип жилья:</legend>
                <ul class="type-checkboxes">
                   <li>
                      <input type="checkbox" name="pool" id="pool-choise">
@@ -52,7 +52,7 @@
                      <label for="wi-fi-choise">wi-fi</label>
                   </li>
                </ul>
-            </div>
+            </fieldset>
             <div class="price-form">
                <p>стоимость в сутки (р):</p>
                <span class="range">
@@ -60,7 +60,7 @@
                   <p>до 3000</p>
                </span>
                <input type="range" min="0" max="3000" step="100" value="0">
-               <input type="submit" value="показать">
+               <input type="submit" value="показать" class="show-inner-result">
             </div>
          </div>
          <div class="result">
@@ -68,13 +68,23 @@
                <p class="search-result">найдено:</p>
                <p>сортировка:</p>
                <ul class="sort-by-properties">
-                  <li>по цене</li>
-                  <li>по типу</li>
-                  <li>по рейтингу</li>
+                  <li>
+                      <a class="sort-by-price" href="#">по цене</a>
+                  </li>
+                  <li>
+                      <a class="sort-by-price" href="#">по типу</a>
+                  </li>
+                  <li>
+                      <a class="sort-by-price" href="#">по рейтингу</a>
+                  </li>
                </ul>
                <ul class="sort-direction">
-                   <li></li>
-                   <li></li>
+                   <li class="arrow-up">
+                       <a href="#"></a>
+                   </li>
+                   <li class="arrow-down">
+                       <a href="#"></a>
+                   </li>
                </ul>
             </div>
             <div class="hostels-list">

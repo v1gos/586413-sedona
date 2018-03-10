@@ -76,25 +76,35 @@
             <h3 class="viewing-result">заинтересовались?</h3>
             <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиницв седоне</p>
          </div>
-          <div class="purchise-info">
-              <span class="purchise-info-header">поиск гостиница в седоне</span>
-              <div class="registration-purchise-container">
-                  <div class="registration-purchise">
-                      <label for="start-date">дата заезда:</label>
-                      <input type="date" name="start-date" id="start-date">
-                  <div class="registration-purchise">
-                      <label for="end-date">дата выезда:</label>
-                      <input type="date" name="end-date" id="end-date">
-                  </div>
-                  <div class="number-of-customers">
-                      <label for="adult-number">взрослые:</label>
+         <div class="purchise-info">
+         <button class="purchise-info-button">поиск гостиницы в седоне</button>
+         <div class="registration-purchise-container">
+            <div class="registration-purchise">
+               <label for="start-date">дата заезда:</label>
+               <input type="date" name="start-date" id="start-date">
+            </div>
+               <div class="registration-purchise">
+                  <label for="end-date">дата выезда:</label>
+                  <input type="date" name="end-date" id="end-date">
+               </div>
+               <div class="number-of-customers">
+                  <label for="adult-number">взрослые:</label>
+                  <div class="number-of-customers-form">
+                      <button class="minus-button"></button>
                       <input type="number" name="adult-number" id="adult-number">
-                      <label for="childer-number">дети:</label>
-                      <input type="number" name="childer-number" id="childer-number">
-                      <input type="submit" name="purchise-info-submit" id="purchise-info-submit" value="найти">  !!
+                      <button class="plus-button"></button>
                   </div>
-              </div>
-          </div>
+                  <label for="childer-number">дети:</label>
+                  <div class="number-of-customers-form">
+                      <button class="minus-button"></button>
+                      <input type="number" name="childer-number" id="childer-number">
+                      <button class="plus-button"></button>
+                  </div>
+                  <div class="show-search-result-button">
+                  <input type="submit" name="purchise-info-submit" id="purchise-info-submit" value="найти">
+                  </div>
+             </div>
+         </div>
       </main>
       <foother class="main-foother">
          <p>#visitsedona</p>
