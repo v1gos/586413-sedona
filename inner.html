@@ -19,57 +19,63 @@
       <main class="main-content">
          <h1 class="hidden">Отели Седона</h1>
          <div class="promo-block promo-block-inner">
-             <ul class="type-checkboxes">
-                 <p>тип жилья:</p>
-                 <li>
-                     <input type="checkbox" name="pool" id="pool-choise">
-                     <label for="pool-choise">бассейн</label>
-                 </li>
-                 <li>
-                     <input type="checkbox" name="parking" id="parking-choise">
-                     <label for="parking-choise">парковка</label>
-                 </li>
-                 <li>
-                     <input type="checkbox" name="wi-fi" id="wi-fi-choise">
-                     <label for="wi-fi-choise">wi-fi</label>
-                 </li>
-             </ul>
-             <ul class="type-checkboxes">
-                 <p>инфраструктура:</p>
-                 <li>
+            <div class="checkboxes-container">
+               <p>инфраструктура:</p>
+               <ul class="type-checkboxes">
+                  <li>
                      <input type="checkbox" name="hostel" id="hostel-choise">
                      <label for="hostel-choise">гостиница</label>
-                 </li>
-                 <li>
+                  </li>
+                  <li>
                      <input type="checkbox" name="motel" id="motel-choise">
                      <label for="motel-choise">мотель</label>
-                 </li>
-                 <li>
+                  </li>
+                  <li>
                      <input type="checkbox" name="apartment" id="apartment-choise">
                      <label for="apartment-choise">апартаменты</label>
-                 </li>
-             </ul>
-             <div class="price-form">
-                 <p>стоимость в сутки (р):</p>
-                 <span class="range">
-                     <p>от 0</p>
-                     <p>до 3000</p>
-                 </span>
-                 <input type="range" min="0" max="3000" step="100" value="0">
-                 <input type="submit" value="показать">
-             </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="checkboxes-container">
+               <p>тип жилья:</p>
+               <ul class="type-checkboxes">
+                  <li>
+                     <input type="checkbox" name="pool" id="pool-choise">
+                     <label for="pool-choise">бассейн</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="parking" id="parking-choise">
+                     <label for="parking-choise">парковка</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="wi-fi" id="wi-fi-choise">
+                     <label for="wi-fi-choise">wi-fi</label>
+                  </li>
+               </ul>
+            </div>
+            <div class="price-form">
+               <p>стоимость в сутки (р):</p>
+               <span class="range">
+                  <p>от 0</p>
+                  <p>до 3000</p>
+               </span>
+               <input type="range" min="0" max="3000" step="100" value="0">
+               <input type="submit" value="показать">
+            </div>
          </div>
          <div class="result">
             <div class="sort">
-                <p class="search-result">найдено:</p>
-                <ul>
-                    <p>сортировка:</p>
-                    <li>по цене</li>
-                    <li>по типу</li>
-                    <li>по рейтингу</li>
-                </ul>
-            <span class="up-button"></span>
-            <span class="down-button"></span>
+               <p class="search-result">найдено:</p>
+               <p>сортировка:</p>
+               <ul class="sort-by-properties">
+                  <li>по цене</li>
+                  <li>по типу</li>
+                  <li>по рейтингу</li>
+               </ul>
+               <ul class="sort-direction">
+                   <li></li>
+                   <li></li>
+               </ul>
             </div>
             <div class="hostels-list">
                <article class="hostel">
