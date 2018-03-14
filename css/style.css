@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.header-menu a {
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+.header-menu span {
+    line-height: 26px;
+    color: #766357;
+    font-weight: bold;
+}
+.promo-block {
+    background-image: url("img/index/main-back-img.jpg");
+}
+.promo-text slogan, .promo-text p {
+    text-align: center;
+}
+.reason {
+    background-color: #81b3d2;
+}
+.reason-descriptions h3{
+    font-size: 21px;
+    color: white;
+    text-align: center;
+}
+.reason-descriptions p{
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+.reason-illustration-item h4, .reason-other-container .reason-descriptions h3{
+    font-size: 21;
+    color: black;
+    text-align: center;
+}
+.reason-illustration-item p, .reason-other-container .reason-descriptions p{
+    font-size: 14;
+    color: #333333;
+    text-align: center;
+}
+.reason-other-container {
+    background-color: #eeeeee;
+}
+.purchase-offer h3 {
+    font-size: 30px;
+}
+.purchise-info-button {
+    font: inherit;
+    background-color: #766357;
+}
+.registration-purchise-container input {
+    font: inherit;
+    background-color: #f2f2f2;
+}
+.main-foother {
+    background-color: (253, 253, 253, 0.9);
+}
+.main-foother span {
+    font: inherit;
+    font-size: 21px;
+}
+.promo-block-inner {
+    background-image: url(img/inner/inner-background-img.jpg);
+}
