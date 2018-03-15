@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
       <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
@@ -55,15 +56,15 @@
                   </li>
                </ul>
             </fieldset>
-            <div class="price-form">
-               <p>стоимость в сутки (р):</p>
+            <fieldset class="price-form">
+               <legend>стоимость в сутки (р):</legend>
                <span class="range">
                   <p>от 0</p>
                   <p>до 3000</p>
                </span>
                <input type="range" min="0" max="3000" step="100" value="0">
                <input type="submit" value="показать" class="show-inner-result">
-            </div>
+            </fieldset>
          </div>
          <div class="result">
             <div class="sort">
@@ -170,10 +171,10 @@
                         </div>
                         <div class="buttons-group">
                            <a class="purchase-buttons button-more-info" href="#">
-                           <button class="more-info">подробнее</button>
+                           подробнее
                            </a>
                            <a class="purchase-buttons button-booking" href="#">
-                           <button class="reserve">забронировать</button>
+                           забронировать
                            </a>
                         </div>
                      </section>
@@ -190,12 +191,11 @@
          </div>
       </main>
       <foother class="main-foother">
-         <p>#visitsedona</p>
+         <span>#visitsedona</span>
          <div class="social-container">
-            <b>Соцсети</b>
-            <a class="social-link" class="social social-tw" href="#"></a>
-            <a class="social-link" class="social social-fb" href="#"></a>
-            <a class="social-link" class="social social-yt" href="#"></a>
+            <a class="social social-tw" href="#"></a>
+            <a class="social social-fb" href="#"></a>
+            <a class="social social-yt" href="#"></a>
          </div>
          <div class="foother-logo">
             <p>website by</p>

@@ -23,7 +23,7 @@ li {
     font-weight: bold;
 }
 .promo-block {
-    background-image: url("img/index/main-back-img.jpg");
+    background-image: url("../img/index/main-back-img.jpg");
 }
 .promo-text slogan, .promo-text p {
     text-align: center;
@@ -73,5 +73,61 @@ li {
     font-size: 21px;
 }
 .promo-block-inner {
-    background-image: url(img/inner/inner-background-img.jpg);
+    background-image: url("../img/inner/inner-background-img.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+fieldset {
+  border: none;
+}
+fieldset legend{
+    font-size: 16px;
+    color: #ffffff;
+}
+fieldset li, .range p, .show-inner-result {
+    color: #ffffff;
+}
+div .sort .search-result {
+    font-size: 21px;
+}
+.sort p, .sort a {
+    font-size: 12px;
+}
+.sort a {
+     border-bottom: 1px dashed #000080;
+     color: rgba(0, 0, 0, 0.3);
+}
+.sort a:active,
+.sort a:focus {
+      border-bottom: none;
+      color: #81b3d2;
+}
+.hostel-name {
+    font-size: 21px;
+}
+.type-price span {
+    color: #333333;
+}
+.buttons-group button {
+    color: white;
+}
+.button-more-info {
+    background-color: #81b3d2;
+}
+.button-booking {
+    background-color: #766357;
+}
+.numbers-rating {
+    background-color: #f2f2f2;
+    color: #666666;
+}
+.show-search-result-button input {
+    background color: #81b3d2;
+    color: white;
+}
+.social a {
+    background-color: #81b3d2;
+}
+.registration-purchise-container label {
+    font-weight: bold;
 }
