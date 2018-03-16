@@ -9,6 +9,13 @@ body {
 a {
   text-decoration: none;
 }
+h2, p, h3, h4 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
 li {
     list-style: none;
 }
@@ -24,9 +31,6 @@ li {
     line-height: 26px;
     color: #766357;
     font-weight: bold;
-}
-.promo-block {
-    background-image: url("../img/index/main-back-img.jpg");
 }
 .promo-text slogan, .promo-text p {
     text-align: center;
@@ -159,25 +163,29 @@ div .sort .search-result {
     width: 100%;
     background-color: white;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 .main-navigation img {
   left: 50%;
+    margin-left: -69px;
   position: absolute;
 }
-.main-navigation {
-    width: 1060px;
-    
-}
+
 .header-menu {
     display: flex;
     justify-content: space-between;
-    padding: 20px 72px;
-}
-
-.header-menu li:nth-child(3) {
-    padding-left: 306px;
+    width: 100%;
 }
 .promo-block{
     background-image: url(../img/index/main-back-img.jpg);
+    padding-top: 75px;
+    padding-bottom: 83px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
 }
 .reason-descriptions{
     width: 400px;
@@ -188,7 +196,30 @@ div .sort .search-result {
 .reason-other-container{
     display:flex;
 }
-
-.reason-descriptions{
-
+.reason-descriptions p{
+    padding: 0 70px;
+}
+.reason-descriptions h3{
+    padding: 140px;
+}
+.main-navigation ul{
+    padding: 10px 6%;
+}
+.header-menu li{
+    width: 20%;
+}
+.main-navigation{
+    width: 100%;
+}
+.header-menu li:nth-child(2){
+    margin-right: 20%;
+}
+.promo-text p {
+    padding-top: 40px;
+}
+.promo-text h2 {
+    padding: 60px 380px 0;
+}
+.reason {
+    margin-top: 56px;
 }

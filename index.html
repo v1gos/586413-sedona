@@ -8,6 +8,7 @@
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
+      <div class="container">
       <header class="main-header">
          <nav class="main-navigation">
             <img src="img/logo/sedona-logo.png" alt="Логотип Седона">
@@ -21,10 +22,10 @@
       </header>
       <main class="main-content">
          <h1 class="hidden">Туры Седона, Калифорния</h1>
-         <div class="promo-block"><img src="img/index/sedona-logo-text.svg" class="main-image" alt="Welcome to the gorgeous Sedona"></div>
+         <div class="promo-block"><img src="img/index/sedona-logo-text.png" class="main-image" alt="Welcome to the gorgeous Sedona"></div>
          <div class="promo-text">
             <slogan>
-               <h2>седона - небольшой городок в аризоне,<br> заслуживающий большего!</h2>
+               <h2>седона - небольшой городок в аризоне, заслуживающий большего!</h2>
             </slogan>
             <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
          </div>
@@ -86,27 +87,28 @@
                <label for="start-date">дата заезда:</label>
                <input type="date" name="start-date" id="start-date">
             </div>
-               <div class="registration-purchise">
-                  <label for="end-date">дата выезда:</label>
-                  <input type="date" name="end-date" id="end-date">
+            <div class="registration-purchise">
+               <label for="end-date">дата выезда:</label>
+               <input type="date" name="end-date" id="end-date">
+            </div>
+            <div class="number-of-customers">
+               <label for="adult-number">взрослые:</label>
+               <div class="number-of-customers-form">
+                  <button class="minus-button"></button>
+                  <input type="number" name="adult-number" id="adult-number">
+                  <button class="plus-button"></button>
                </div>
-               <div class="number-of-customers">
-                  <label for="adult-number">взрослые:</label>
-                  <div class="number-of-customers-form">
-                      <button class="minus-button"></button>
-                      <input type="number" name="adult-number" id="adult-number">
-                      <button class="plus-button"></button>
-                  </div>
-                  <label for="childer-number">дети:</label>
-                  <div class="number-of-customers-form">
-                      <button class="minus-button"></button>
-                      <input type="number" name="childer-number" id="childer-number">
-                      <button class="plus-button"></button>
-                  </div>
-                  <div class="show-search-result-button">
+               <label for="childer-number">дети:</label>
+               <div class="number-of-customers-form">
+                  <button class="minus-button"></button>
+                  <input type="number" name="childer-number" id="childer-number">
+                  <button class="plus-button"></button>
+               </div>
+               <div class="show-search-result-button">
                   <input type="submit" name="purchise-info-submit" id="purchise-info-submit" value="найти">
-                  </div>
-             </div>
+               </div>
+            </div>
+            </div>
          </div>
       </main>
       <foother class="main-foother">
@@ -123,5 +125,6 @@
             </a>
          </div>
       </foother>
+      </div>
    </body>
 </html>
