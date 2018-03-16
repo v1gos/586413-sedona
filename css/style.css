@@ -12,6 +12,10 @@ a {
 h2, p, h3, h4 {
     margin: 0;
 }
+fieldset {
+    padding: 0;
+    margin: 0;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -97,6 +101,7 @@ fieldset {
 fieldset legend{
     font-size: 16px;
     color: #ffffff;
+    font-weight: bold;
 }
 fieldset li, .range p, .show-inner-result {
     color: #ffffff;
@@ -202,7 +207,7 @@ div .sort .search-result {
 .main-navigation ul{
     padding: 10px 6%;
 }
-.header-menu li{
+.header-menu li, .header-menu span{
     width: 20%;
 }
 .main-navigation{
@@ -262,7 +267,6 @@ div .sort .search-result {
     width: 100%;
     text-align: center;
     flex-direction: column;
-
 }
 .purchase-offer {
     padding: 55px 312px 0;
@@ -282,4 +286,90 @@ div .sort .search-result {
     color: white;
     font-size: 21px;
     font-weight: bold;
+}
+.current {
+    padding: 0;
+    margin: 0px;
+}
+.promo-block-inner {
+    background-image: url(../img/inner/inner-background-img.jpg);
+    display: flex;
+    justify-content:flex-start;
+    padding: 0;
+    margin: 0;
+}
+.checkboxes-container {
+    padding-left: 70px;
+    width: 240px;
+}
+.checkboxes-container legend {
+  padding: 27px 0 0;
+}
+.checkboxes-container li {
+    padding-top: 32px;
+}
+.checkboxes-container li:last-child {
+    padding-bottom: 35px;
+}
+.type-checkboxes li label{
+    padding-left: 16px;
+}
+.price-form {
+    width: 329px;
+}
+.price-form legend {
+    padding: 27px 0 0;
+}
+.range {
+    display: flex;
+    flex-direction: row;
+}
+.range p{
+    border: 1px solid black;
+    width: 130px;
+}
+.sort {
+    display: flex;
+    border-bottom: 1px solid;
+    border-color: #e5e5e5;
+}
+.search-result{
+    width: 160px; 
+    padding: 30px 0 33px 73px;
+}
+.sort p {
+    padding-top: 40px;
+
+}
+.sort-by-properties {
+    display: flex;
+    flex-direction: row;
+}
+.sort-by-properties li {
+    padding: 40px 15px 0 30px;;
+}
+.sort-by-properties li:first-child {
+    padding-left: 40px;
+}
+.sort-direction {
+    display: flex;
+    flex-direction: row;
+}
+.arrow-up {
+    background-image: url(../img/icons/icon-up-dir.svg);
+    width: 20px;
+    background-repeat: no-repeat;
+    display: center;    
+}
+.arrow-down {
+    background-image: url(../img/icons/icon-down-dir.svg);
+    width: 20px;
+    background-repeat: no-repeat;
+    display: center; 
+}
+.hostel {
+    display: flex;
+}
+.open-product {
+    padding: 30px 0 30px 73px;
 }
