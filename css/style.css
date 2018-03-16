@@ -190,9 +190,6 @@ div .sort .search-result {
 .reason-descriptions{
     width: 400px;
 }
-.reason-image{
-    background-image: url(../img/index/real-city-img.jpg);
-}
 .reason-other-container{
     display:flex;
 }
@@ -222,4 +219,67 @@ div .sort .search-result {
 }
 .reason {
     margin-top: 56px;
+    display: flex;
+}
+.large-reason-descriptions{
+    color: white;
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.large-reason-descriptions h3{
+    padding: 50px 140px 0;
+}
+.large-reason-descriptions p{
+    padding: 30px 60px 0;
+}
+.large-reason-descriptions p:last-child{
+    padding-bottom: 40px;
+}
+.reason-descriptions {
+    display: flex;
+    width: 100%;
+}
+.reason-descriptions h4{
+    padding: 162px 144px 0;
+}
+.reason-descriptions p{
+    padding: 30px 57px 0;
+}
+.reason-image{
+    width: 800px;
+}
+.reason-other-container .large-reason-descriptions h3 {
+    color: black;
+}
+.reason-other-container .large-reason-descriptions p {
+    color: #767676;
+}
+.purchase-offer-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+
+}
+.purchase-offer {
+    padding: 55px 312px 0;
+}
+.purchase-offer h3 {
+    padding: 0 50px;
+}
+.purchase-offer p {
+    padding: 35px 70px 0;
+    color: #b3b3b3;
+    line-height: 24px;
+}
+.purchase-offer button{
+    margin: 50px 3px 0;
+    width: 570px;
+    padding: 32px 130px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
 }
