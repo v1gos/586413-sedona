@@ -127,6 +127,20 @@ div .sort .search-result {
     border-bottom: none;
     color: black;
 }
+.button-more-info:hover {
+    background-color: #639dbe;
+}
+.button-more-info:active {
+    background-color: #5295ba;
+    color: #75abc6;
+}
+.button-booking:hover {
+    background-color: #614f46;
+}
+.button-booking:active {
+    background-color: #514038;
+    color: #7a6c66;
+}
 .hostel-name {
     font-size: 21px;
 }
@@ -147,7 +161,7 @@ div .sort .search-result {
     background-color: #81b3d2;
 }
 .button-booking {
-    background-color: #766357;
+    background-color: #766258;
 }
 .numbers-rating {
     background-color: #f2f2f2;
@@ -339,7 +353,6 @@ div .sort .search-result {
 }
 .sort p {
     padding-top: 40px;
-
 }
 .sort-by-properties {
     display: flex;
@@ -369,7 +382,66 @@ div .sort .search-result {
 }
 .hostel {
     display: flex;
+    padding: 30px 0px 30px 73px;
+    border-bottom: 1px solid;
+    border-color: #e5e5e5;
 }
-.open-product {
-    padding: 30px 0 30px 73px;
+.info-rating {
+    padding-left: 30px;
+    display: flex;
+}
+.visual-rating {
+    background-image: url(../img/icons/star.svg); 
+    nav-index: -1;
+}
+.buttons-group a {
+    color: white;
+    padding: 8px 15px;
+}
+.type-price {
+    padding-top: 12px;
+}
+.buttons-group {
+    padding-top: 20px;
+}
+.button-booking {
+    margin-left: 6px;
+}
+.main-foother {
+    display: flex;
+    padding-top: 36px;
+}
+.main-foother span {
+    padding-left: 130px
+}
+.social-container {
+    margin-left: 255px;
+
+    padding-bottom: 35px;
+    display: flex;
+}
+.foother-logo {
+    display: flex;
+    margin-left: 230px;
+}
+.social-container social-tw{
+    background-image: url(../img/icons/tw-icon.svg);
+    background-repeat: no-repeat;
+    display: center;
+}
+.social-container .social {
+    padding: 24px 23px;
+    margin-left: 5px;
+    background-color: #81b3d2;
+}
+.social-container .social:first-child {
+    margin-left: 0;
+}
+.purchise-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 315px;
+}
+.registration-purchise-container {
+    padding-left: 55px;
 }
