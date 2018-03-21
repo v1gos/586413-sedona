@@ -5,6 +5,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    background-color: #f2f2f2;
 }
 a {
   text-decoration: none;
@@ -65,6 +66,7 @@ button {
 }
 .reason-other-container {
     background-color: #eeeeee;
+    display:flex;
 }
 .purchase-offer h3 {
     font-size: 30px;
@@ -79,10 +81,6 @@ button {
 .purchise-info-button:active{
     background-color: #514038;
     color: rgba(254, 254, 254, 0.3)
-}
-.registration-purchise-container input {
-    font: inherit;
-    background-color: #f2f2f2;
 }
 .main-foother {
     background-color: (253, 253, 253, 0.9);
@@ -175,9 +173,6 @@ div .sort .search-result {
 .social a {
     background-color: #81b3d2;
 }
-.registration-purchise-container label {
-    font-weight: bold;
-}
 .main-header {
     display: flex;
     width: 100%;
@@ -188,9 +183,9 @@ div .sort .search-result {
     margin: 0 auto;
 }
 .main-navigation img {
-  left: 50%;
+    left: 50%;
     margin-left: -69px;
-  position: absolute;
+    position: absolute;
 }
 .header-menu {
     display: flex;
@@ -198,7 +193,7 @@ div .sort .search-result {
     width: 100%;
     box-sizing: border-box;
 }
-.promo-block{
+.promo-block {
     background-image: url(../img/index/main-back-img.jpg);
     padding-top: 75px;
     padding-bottom: 83px;
@@ -207,28 +202,24 @@ div .sort .search-result {
     display: flex;
     justify-content: center;
 }
-.reason-descriptions{
+.reason-descriptions li {
     width: 400px;
 }
-.reason-other-container{
-    display:flex;
+.reason-descriptions {
+    width: auto;
+    padding-top: 159px;
+    padding-bottom: 80px;
 }
-.reason-descriptions p{
-    padding: 0 70px;
-}
-.reason-descriptions h3{
-    padding: 140px;
-}
-.main-navigation ul{
+.main-navigation ul {
     padding: 10px 6%;
 }
-.header-menu li, .header-menu span{
+.header-menu li, .header-menu span {
     width: 20%;
 }
 .main-navigation{
     width: 100%;
 }
-.header-menu li:nth-child(2){
+.header-menu li:nth-child(2) {
     margin-right: 20%;
 }
 .header-menu li:nth-child(3n), .header-menu li:nth-child(4n) {
@@ -237,19 +228,30 @@ div .sort .search-result {
 .reason {
     display: flex;
 }
-.large-reason-descriptions{
+.large-reason-descriptions {
     color: white;
     padding-top: 44px;
     padding-bottom: 60px;
+    width: 400px;
 }
-.large-reason-descriptions h3{
+.large-reason-descriptions h3 {
     width: 160px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 25px;
+    color: black;
+}
+.large-reason-descriptions p {
+   width: 310px; 
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 25px;
+   color: #9c9c9c;
 }
 .reason-descriptions {
     display: flex;
     width: 100%;
+    background-color: #ffffff;
 }
 .reason-image{
     width: 800px;
@@ -294,6 +296,7 @@ div .sort .search-result {
 }
 .promo-text {
     padding: 55px 0;
+    background-color: #ffffff;
 }
 .promo-text slogan h2 {
     width: 445px;
@@ -427,16 +430,48 @@ div .sort .search-result {
 .social-container .social:first-child {
     margin-left: 0;
 }
-.purchise-info {
-    display: flex;
-    flex-direction: column;
-    padding-left: 315px;
-}
 .registration-purchise-container {
-    padding-left: 55px;
-    width: 515px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 54px;
+    justify-content: center;
+    flex-direction: column;
+}
+.registration-purchise {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 29px;
+}
+.registration-purchise label {
+    display: block;
+    width: 115px;
+}
+.registration-purchise input {
+    width: 346px;
+}
+.number-of-customers {
+    display: flex;
+    justify-content: center;
+}
+.number-of-customers-form {
+    display: flex;
+    justify-content: center;
+    width: 117px;
+}
+.number-of-customers-form label {
+    display: block;
+    width: 118px;
+    margin-bottom: 53px;
+}
+.show-search-result-button {
+    margin: 0 auto;
+}
+.show-search-result-button input{
+    width: 458px;
+    padding: 15px 190px;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: inherit;
 }
 .filter-range {
   width: 330px;
@@ -540,39 +575,28 @@ div .sort .search-result {
 .reason-illustration-item {
     position: relative;
 }
+.reason-illustration-item h4 {
+    width: 110px;
+    margin: 0 auto;
+    text-align: center;
+}
+.reason-illustration-item p {
+    width: 295px;
+    margin: 0 auto;
+    text-align: center;
+}
 .reason-illustration-item h4::before {
   content: "";
   position: absolute; 
   width: 79px;
   height: 79px;
   background-color: black;
-  bottom: 114px;
+  bottom: 80px;
   right:50%;
   margin-right: -39px;
   background-color: inherit;
-  background-image: url(../img/icons/icon-house.svg);
   background-repeat: no-repeat;
-}
-.registration-purchise {
-    padding-top: 29px;
-    width: 460px;
-    display: flex;
-}
-.registration-purchise input {
-   width: 340px;
-   height: 30px;
-}
-.registration-purchise:first-child {
-   margin-top: 26px;
-}
-
-.registration-purchise label {
-    display: block;
-    width: 115px;
-}
-.number-of-customers {
-    display: flex;
-    padding-top: 31px;
+  background-image: url(../img/icons/icon-house.svg);
 }
 .number-of-customers-form {
     width: 113px;
