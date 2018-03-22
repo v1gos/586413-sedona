@@ -30,7 +30,6 @@ button {
 .hidden {
     display: none;
 }
-
 .header-menu a {
     line-height: 26px;
     font-weight: bold;
@@ -40,6 +39,7 @@ button {
     line-height: 26px;
     color: #766357;
     font-weight: bold;
+    text-align: right;
 }
 .reason {
     background-color: #81b3d2;
@@ -64,6 +64,9 @@ button {
     color: #333333;
     text-align: center;
 }
+.background-map {
+    background-image: url(../img/index/index-background-map.jpg);
+}
 .reason-other-container {
     background-color: #eeeeee;
     display:flex;
@@ -84,15 +87,13 @@ button {
 }
 .main-foother {
     background-color: (253, 253, 253, 0.9);
+    display: flex;
+    padding: 37px 100px 35px 132px;
 }
 .main-foother span {
     font: inherit;
     font-size: 21px;
-}
-.promo-block-inner {
-    background-image: url("../img/inner/inner-background-img.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
+    padding-top: 14px;
 }
 fieldset {
   border: none;
@@ -112,7 +113,7 @@ div .sort .search-result {
     font-size: 12px;
 }
 .sort a {
-     border-bottom: 1px dashed #000080;
+     text-decoration: underline dashed #81b3d2;
      color: rgba(0, 0, 0, 0.3);
 }
 .sort a:focus {
@@ -142,6 +143,9 @@ div .sort .search-result {
 }
 .hostel-name {
     font-size: 21px;
+    width: 234px;
+    display: block;
+    margin-bottom: 13px;
 }
 .hostel-name:hover{
     color: #81b3d2;
@@ -150,8 +154,17 @@ div .sort .search-result {
     border-bottom: none;
     color: #cfcfcf;
 }
+.type-price {
+    display: flex;
+    width: 190px;
+    margin-bottom: 8px;
+}
 .type-price span {
     color: #333333;
+    width: 104px;
+}
+.price {
+    text-align: right;
 }
 .buttons-group button {
     color: white;
@@ -165,6 +178,7 @@ div .sort .search-result {
 .numbers-rating {
     background-color: #f2f2f2;
     color: #666666;
+    margin-top: 45px;
 }
 .show-search-result-button input {
     background color: #81b3d2;
@@ -228,6 +242,12 @@ div .sort .search-result {
 .reason {
     display: flex;
 }
+.reason .large-reason-descriptions h3{
+    color: #ffffff;
+}
+.reason .large-reason-descriptions p {
+    color: #e2ecf4;
+}
 .large-reason-descriptions {
     color: white;
     padding-top: 44px;
@@ -262,6 +282,7 @@ div .sort .search-result {
     width: 100%;
     text-align: center;
     flex-direction: column;
+    background-color: #ffffff;
 }
 .purchase-offer {
     padding: 55px 312px 0;
@@ -273,9 +294,9 @@ div .sort .search-result {
     padding: 35px 70px 0;
     color: #b3b3b3;
     line-height: 24px;
+    margin-bottom: 50px;
 }
 .purchase-offer button{
-    margin: 50px 3px 0;
     width: 570px;
     padding: 32px 130px;
     color: white;
@@ -290,9 +311,9 @@ div .sort .search-result {
 .promo-block-inner {
     background-image: url(../img/inner/inner-background-img.jpg);
     display: flex;
-    justify-content:flex-start;
-    padding: 0;
+    padding: 30px 73px 30px;
     margin: 0;
+    justify-content: flex-start;
 }
 .promo-text {
     padding: 55px 0;
@@ -310,20 +331,14 @@ div .sort .search-result {
     text-align: center;
 }
 .checkboxes-container {
-    padding-left: 70px;
-    width: 240px;
+    display: flex;
+    flex-direction: column;
 }
-.checkboxes-container legend {
-  padding: 27px 0 0;
+.inner-filters legend {
+    width: 200px;
 }
-.checkboxes-container li {
-    padding-top: 32px;
-}
-.checkboxes-container li:last-child {
-    padding-bottom: 35px;
-}
-.type-checkboxes li label{
-    padding-left: 16px;
+.inner-filters li {
+    width: 145px;
 }
 .price-controls {
     display: flex;
@@ -340,27 +355,38 @@ div .sort .search-result {
     display: flex;
     border-bottom: 1px solid;
     border-color: #e5e5e5;
+    padding: 30px 70px 32px;
 }
-.search-result{
-    width: 160px; 
-    padding: 30px 0 33px 73px;
+.search-result {
+    width: 160px;
 }
-.sort p {
-    padding-top: 40px;
+.sort-result-by-container {
+    width: 365px;
+    display: flex;
+}
+.sort-result-by-container p {
+    width: 80px;
 }
 .sort-by-properties {
-    display: flex;
-    flex-direction: row;
+    display:flex;   
 }
-.sort-by-properties li {
-    padding: 40px 15px 0 30px;;
-}
-.sort-by-properties li:first-child {
-    padding-left: 40px;
+.sort-by-properties a {
+    display: block;
+    width: 82px;
+    text-align: center;
+    margin-left: 35px;
 }
 .sort-direction {
     display: flex;
-    flex-direction: row;
+    width: 44px;
+    margin-left: auto;
+}
+.arrow-up a, .arrow-down a {
+    display: block;
+}
+.arrow-up, .arrow-down {
+    width: 22px;
+    justify-content: center;
 }
 .arrow-up {
     background-image: url(../img/icons/icon-up-dir.svg);
@@ -376,37 +402,20 @@ div .sort .search-result {
 }
 .hostel {
     display: flex;
-    padding: 30px 0px 30px 73px;
     border-bottom: 1px solid;
     border-color: #e5e5e5;
-}
-.info-rating {
-    padding-left: 30px;
-    display: flex;
+    padding-bottom: 30px;
+    padding-top: 28px;
 }
 .visual-rating {
+    width: 21px;
     background-image: url(../img/icons/star.svg); 
-    nav-index: -1;
+    height: 17px;
+    background-repeat: no-repeat;
 }
 .buttons-group a {
     color: white;
     padding: 8px 15px;
-}
-.type-price {
-    padding-top: 12px;
-}
-.buttons-group {
-    padding-top: 20px;
-}
-.button-booking {
-    margin-left: 6px;
-}
-.main-foother {
-    display: flex;
-    padding-top: 36px;
-}
-.main-foother span {
-    padding-left: 130px
 }
 .social-container {
     margin-left: 255px;
@@ -415,7 +424,8 @@ div .sort .search-result {
 }
 .foother-logo {
     display: flex;
-    margin-left: 230px;
+    margin-left: auto;
+    padding-top: 4px;
 }
 .social-container social-tw{
     background-image: url(../img/icons/tw-icon.svg);
@@ -436,6 +446,9 @@ div .sort .search-result {
     padding-top: 54px;
     justify-content: center;
     flex-direction: column;
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 568px;
 }
 .registration-purchise {
     display: flex;
@@ -452,19 +465,24 @@ div .sort .search-result {
 .number-of-customers {
     display: flex;
     justify-content: center;
+    margin-bottom: 54px;
 }
 .number-of-customers-form {
     display: flex;
-    justify-content: center;
-    width: 117px;
+    width: 233px;
 }
 .number-of-customers-form label {
     display: block;
-    width: 118px;
-    margin-bottom: 53px;
+    width: 80px;
+    margin-right: 36px;
+}
+.number-of-customers-form:nth-of-type(2) {
+    background-color: aqua;
+    text-align: right
 }
 .show-search-result-button {
-    margin: 0 auto;
+    margin: 0 auto 78px;
+    padding-bottom: 55px;
 }
 .show-search-result-button input{
     width: 458px;
@@ -477,6 +495,7 @@ div .sort .search-result {
   width: 330px;
   color: #ffffff;
   text-transform: uppercase;
+  margin-left: auto;
 }
 .filter-range-title {
   margin-bottom: 9px;
@@ -598,9 +617,8 @@ div .sort .search-result {
   background-repeat: no-repeat;
   background-image: url(../img/icons/icon-house.svg);
 }
-.number-of-customers-form {
-    width: 113px;
-    background-color: #f2f2f2;
+.minus-button, .plus-button, .number-of-customers-form input {
+    width: 38px;
 }
 .social-tw {
     background-image: url(../img/icons/tw-icon.svg);
@@ -619,8 +637,39 @@ div .sort .search-result {
 }
 .creator-link {
     width: 116px;
-    margin-left: 5px;
+    margin-left: 6px;
 }
 .foother-logo p {
     padding-top: 6px;
+}
+.hostels-list {
+    padding:  0 72px;
+}
+.open-product {
+    width: 135px;
+}
+.hostel-info {
+    margin-left: 25px;
+    width: 259px;
+}
+.buttons-group {
+    width: 258px;
+    display: flex;
+}
+.button-more-info {
+    width: 110px;
+    margin-right: 6px;
+}
+.button-booking {
+    width: 142px;
+}
+.hostel-rating {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 105px; /* с расчетом до 5 звезд */
+}
+.visual-rating-container {
+    width: 105px;
+    display: flex;
 }

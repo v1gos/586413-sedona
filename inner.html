@@ -16,16 +16,16 @@
                <li><a class="menu-link" href="info">информация</a></li>
                <li><a class="menu-link" href="media">фото и видео</a></li>
                <li><a class="menu-link" href="map">карта штата</a></li>
-               <li><a class="menu-link" href="inner.html">гостиницы</a></li>
+               <span class="current">гостиницы</span>
             </ul>
          </nav>
       </header>
          <main class="main-content">
             <h1 class="hidden">Отели Седона</h1>
             <div class="promo-block promo-block-inner">
-               <fieldset class="checkboxes-container">
-                  <legend>инфраструктура:</legend>
+               <fieldset class="inner-filters checkboxes-container">
                   <ul class="type-checkboxes">
+                  <legend>инфраструктура:</legend>
                      <li>
                         <input type="checkbox" name="pool" id="pool-choise">
                         <label for="pool-choise">бассейн</label>
@@ -40,9 +40,9 @@
                      </li>
                   </ul>
                </fieldset>
-               <fieldset class="checkboxes-container">
-                  <legend>тип жилья:</legend>
+               <fieldset class="inner-filters checkboxes-container">
                   <ul class="type-checkboxes">
+                  <legend>тип жилья:</legend>
                      <li>
                         <input type="checkbox" name="hostel" id="hostel-choise">
                         <label for="hostel-choise">гостиница</label>
@@ -57,8 +57,8 @@
                      </li>
                   </ul>
                </fieldset>
-    <div class="filter-range">
-      <div class="filter-range-title">Стоимость в сутки (р):</div>
+    <fieldset class="inner-filters filter-range">
+      <legend>Стоимость в сутки (р):</legend>
       <div class="price-controls">
         <label class="min-price">от <input type="text" name="min-price" value="0"></label>
         <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
@@ -71,11 +71,12 @@
         <div class="range-toggle range-toggle-max"></div>
       </div>
       <button class="btn-transparent" type="submit">Показать</button>
-    </div>
+    </fieldset>
             </div>
             <div class="result">
                <div class="sort">
                   <p class="search-result">найдено:</p>
+                   <div class="sort-result-by-container">
                   <p>сортировка:</p>
                   <ul class="sort-by-properties">
                      <li>
@@ -88,6 +89,7 @@
                         <a class="sort-by-price" href="#">по рейтингу</a>
                      </li>
                   </ul>
+                   </div>
                   <ul class="sort-direction">
                      <li class="arrow-up">
                         <a href="#"></a>
@@ -102,8 +104,7 @@
                      <a class="open-product" href="more-info-amara">
                      <img src="img/inner/amara-hostel-img.jpg" alt="Amara resort &amp; spa" width="135" height="90">
                      </a>
-                     <section class="info-rating">
-                        <section class="info">
+                        <section class="hostel-info">
                            <a class="hostel-name">amara resort &amp; spa</a>
                            <div class="type-price">
                               <span class="type">гостиница</span>
@@ -118,18 +119,17 @@
                               </a>
                            </div>
                         </section>
-                        <section class="rating">
-                           <div class="visual-rating-container">
+                        <section class="hostel-rating">
+                            <div class="visual-rating-container">
                               <span class="visual-rating"></span>
                               <span class="visual-rating"></span>
                               <span class="visual-rating"></span>
                               <span class="visual-rating"></span>
-                           </div>
-                           <span class="numbers-rating">
+                             </div> 
+                           <p class="numbers-rating">
                            рейтинг: 8,5
-                           </span>
+                           </p>
                         </section>
-                     </section>
                   </article>
                   <article class="hostel">
                      <section class="hostel-image">
@@ -137,12 +137,11 @@
                         <img src="img/inner/deser-quail-hostel-img.jpg" alt="Desert quail inn" width="135" height="90">
                         </a>
                      </section>
-                     <section class="info-rating">
-                        <section class="info">
+                        <section class="hostel-info">
                            <a class="hostel-name">desert quail inn</a>
                            <div class="type-price">
-                              <span>мотель</span>
-                              <span>от 3000 р.</span>
+                              <span class="type">мотель</span>
+                              <span class="price">от 3000 р.</span>
                            </div>
                            <div class="buttons-group">
                               <a class="purchase-buttons button-more-info" href="#">
@@ -153,15 +152,16 @@
                               </a>
                            </div>
                         </section>
-                        <section class="visual-rating-container">
+                        <section class="hostel-rating">
+                           <div class="visual-rating-container">
                            <span class="visual-rating"></span>
                            <span class="visual-rating"></span>
                            <span class="visual-rating"></span>
-                           <span class="numbers-rating">
+                            </div>
+                           <p class="numbers-rating">
                            рейтинг: 8,9
-                           </span>
+                           </p>
                         </section>
-                     </section>
                   </article>
                   <article class="hostel">
                      <section class="hostel-image">
@@ -169,12 +169,11 @@
                         <img src="img/inner/villas-hostel-img.jpg" alt="villas at poco diablo" width="135" height="90">
                         </a>
                      </section>
-                     <section class="info-rating">
-                        <section class="info">
+                        <section class="hostel-info">
                            <a class="hostel-name">villas at poco diablo</a>
                            <div class="type-price">
-                              <span>апартаменты</span>
-                              <span>от 2000 р.</span>
+                              <span class="type">апартаменты</span>
+                              <span class="price">от 2000 р.</span>
                            </div>
                            <div class="buttons-group">
                               <a class="purchase-buttons button-more-info" href="#">
@@ -185,14 +184,15 @@
                               </a>
                            </div>
                         </section>
-                        <section class="visual-rating-container">
+                        <section class="hostel-rating">
+                           <div class="visual-rating-container">
                            <span class="visual-rating"></span>
                            <span class="visual-rating"></span>
-                           <span class="numbers-rating">
+                           </div>
+                           <p class="numbers-rating">
                            рейтинг: 9,2
-                           </span>
+                           </p>
                         </section>
-                     </section>
                   </article>
                </div>
             </div>
