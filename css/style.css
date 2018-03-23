@@ -337,9 +337,6 @@ div .sort .search-result {
 .inner-filters legend {
     width: 200px;
 }
-.inner-filters li {
-    width: 145px;
-}
 .price-controls {
     display: flex;
     flex-direction: row;
@@ -474,11 +471,9 @@ div .sort .search-result {
 .number-of-customers-form label {
     display: block;
     width: 80px;
-    margin-right: 36px;
 }
-.number-of-customers-form:nth-of-type(2) {
-    background-color: aqua;
-    text-align: right
+.number-of-customers-form:nth-of-type(2n) label {
+    text-align: right;
 }
 .show-search-result-button {
     margin: 0 auto 78px;
@@ -620,6 +615,9 @@ div .sort .search-result {
 .minus-button, .plus-button, .number-of-customers-form input {
     width: 38px;
 }
+.minus-button {
+    margin-left: 35px;
+}
 .social-tw {
     background-image: url(../img/icons/tw-icon.svg);
     background-repeat: no-repeat;
@@ -672,4 +670,51 @@ div .sort .search-result {
 .visual-rating-container {
     width: 105px;
     display: flex;
+}
+.registration-purchise input {
+    background: url("../img/icons/calendar-icon.svg") no-repeat 98% 50%;
+}
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
+.type-checkboxes label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+.type-checkboxes li {
+    margin-top: 24px;
+}
+.type-checkboxes li label {
+    width: 100px;
+    padding-left: 45px; 
+}
+.type-checkboxes label:before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/icons/checkbox-off.svg);
+  left: 0px;
+  top: -5px;
+}
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 19px;
+  background-image: url(../img/icons/checkbox-on.svg);
+  left: 0px;
+  top: -5px;
 }
