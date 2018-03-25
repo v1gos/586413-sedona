@@ -450,6 +450,13 @@ div .sort .search-result {
 .social-container .social:first-child {
     margin-left: 0;
 }
+.social-container:hover {
+    background-color: #639dbe;
+}
+.social-container:active {
+    background-color: #5295ba;
+    background-image: 
+}
 .registration-purchise-container {
     display: flex;
     flex-wrap: wrap;
@@ -470,8 +477,16 @@ div .sort .search-result {
     display: block;
     width: 115px;
 }
-.registration-purchise input {
+.registration-purchise-container .registration-purchise input {
     width: 346px;
+    border: none;
+    background-color: #f2f2f2;
+}
+.registration-purchise input:hover {
+    background-color: #eaeaea;
+}
+.registration-purchise input:focus {
+    background: #ffffff;
 }
 .number-of-customers-form {
     display: flex;
@@ -786,4 +801,10 @@ input[type="radio"].visually-hidden {
     transform: translate(-50%, -50%);
     content: "";
     transform: rotate(90deg);
+}
+.menu-link:hover {
+    color: #9ec4dc;
+}
+.menu-link:active {
+    color: #bebebe;
 }
