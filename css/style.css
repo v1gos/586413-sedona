@@ -126,14 +126,14 @@ div .sort .search-result {
     color: rgba(0, 0, 0, 0.3);
 }
 .sort a:focus {
-    border-bottom: none;
     color: #81b3d2;
+    text-decoration: none;
 }
 .sort a:hover {
     color: #81b3d2;
 }
 .sort a:active {
-    border-bottom: none;
+    text-decoration: none;
     color: black;
 }
 .button-more-info:hover {
@@ -399,16 +399,28 @@ div .sort .search-result {
     justify-content: center;
 }
 .arrow-up {
-    background-image: url(../img/icons/icon-up-dir.svg);
     width: 20px;
     background-repeat: no-repeat;
     display: center;
+    background-image: url(../img/icons/icon-up-dir.svg);
+}
+.arrow-up:focus, .arrow-up:active {
+    background-image: url(../img/icons/icon-up-dir-active.svg);
+}
+.arrow-up:hover {
+    background-image: url(../img/icons/icon-up-dir-hover.svg);    
 }
 .arrow-down {
-    background-image: url(../img/icons/icon-down-dir.svg);
     width: 20px;
     background-repeat: no-repeat;
     display: center;
+    background-image: url(../img/icons/icon-down-dir.svg);
+}
+.arrow-down:focus, .arrow-down:active {
+    background-image: url(../img/icons/icon-down-dir-activ.svg)
+}
+.arrow-down:hover {
+    background-image: url(../img/icons/icon-down-dir-hover.svg);
 }
 .hostel {
     display: flex;
@@ -450,12 +462,11 @@ div .sort .search-result {
 .social-container .social:first-child {
     margin-left: 0;
 }
-.social-container:hover {
+.social-container a:hover {
     background-color: #639dbe;
 }
-.social-container:active {
+.social-container a:active {
     background-color: #5295ba;
-    background-image: 
 }
 .registration-purchise-container {
     display: flex;
@@ -482,11 +493,13 @@ div .sort .search-result {
     border: none;
     background-color: #f2f2f2;
 }
-.registration-purchise input:hover {
+.registration-purchise-container .registration-purchise input:hover {
     background-color: #eaeaea;
+    background: url(../img/icons/calendar-icon-hover.svg) no-repeat 98% 50%;
 }
-.registration-purchise input:focus {
-    background: #ffffff;
+.registration-purchise-container .registration-purchise input:focus {
+    background-color: green;
+    background: url(../img/icons/calendar-icon-use.svg) no-repeat 98% 50%;
 }
 .number-of-customers-form {
     display: flex;
@@ -503,6 +516,15 @@ div .sort .search-result {
     font-size: 21px;
     font-weight: bold;
     text-transform: inherit;
+    background-color: #81b3d2;
+    border: none; 
+}
+.show-search-result-button input:hover {
+    background-color: #639dbe;
+}
+.show-search-result-button input:active {
+    background-color: #5295ba;
+    color: #85b5cd;
 }
 .filter-range {
     width: 330px;
@@ -643,19 +665,29 @@ div .sort .search-result {
     background-repeat: no-repeat;
     background-position: center;
 }
+.social-tw:active {
+    background-image: url(../img/icons/tw-icon%20-%20active.svg);
+}
 .social-fb {
     background-image: url(../img/icons/fb-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+.social-fb:active {
+    background-image: url(../img/icons/fb-icon%20-%20active.svg);
 }
 .social-yt {
     background-image: url(../img/icons/youtube-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
+.social-yt:active {
+    background-image: url(../img/icons/youtube-icon%20-%20active.svg);
+}
 .creator-link {
     width: 116px;
     margin-left: 6px;
+    
 }
 .foother-logo p {
     padding-top: 6px;
