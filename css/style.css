@@ -72,6 +72,10 @@ button {
 }
 .background-map {
     background-image: url(../img/index/index-background-map.jpg);
+    width: 100%;
+    height: 747px;
+    z-index: -1;
+    position: relative;
 }
 .reason-other-container {
     background-color: #eeeeee;
@@ -92,9 +96,10 @@ button {
     color: rgba(254, 254, 254, 0.3)
 }
 .main-foother {
-    background-color: (253, 253, 253, 0.9);
+    background-color: (253, 253, 253, 0.8);
     display: flex;
     padding: 37px 100px 35px 132px;
+    
 }
 .main-foother span {
     font: inherit;
@@ -294,6 +299,7 @@ div .sort .search-result {
     text-align: center;
     flex-direction: column;
     background-color: #ffffff;
+    position: relative;
 }
 .purchase-offer {
     padding: 55px 312px 0;
@@ -469,14 +475,16 @@ div .sort .search-result {
     background-color: #5295ba;
 }
 .registration-purchise-container {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     padding-top: 54px;
     justify-content: center;
     flex-direction: column;
     background-color: #ffffff;
-    margin: 0 auto;
     width: 568px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 .registration-purchise {
     display: flex;
@@ -493,13 +501,14 @@ div .sort .search-result {
     border: none;
     background-color: #f2f2f2;
 }
-.registration-purchise-container .registration-purchise input:hover {
+.registration-purchise input:hover {
     background-color: #eaeaea;
-    background: url(../img/icons/calendar-icon-hover.svg) no-repeat 98% 50%;
+    background-image: url(../img/icons/calendar-icon-hover.svg) no-repeat 98% 50%;
 }
-.registration-purchise-container .registration-purchise input:focus {
-    background-color: green;
-    background: url(../img/icons/calendar-icon-use.svg) no-repeat 98% 50%;
+.registration-purchise input:focus {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    background-image: url(../img/icons/calendar-icon-use.svg) no-repeat 98% 50%;
 }
 .number-of-customers-form {
     display: flex;
@@ -508,7 +517,6 @@ div .sort .search-result {
 .show-search-result-button {
     padding: 0  55px 55px;
     display: flex;
-    margin-bottom: 78px;
 }
 .show-search-result-button input {
     width: 458px;
@@ -839,4 +847,26 @@ input[type="radio"].visually-hidden {
 }
 .menu-link:active {
     color: #bebebe;
+}
+.index-foother {
+    position: absolute;
+    width: 1200px;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.registration-purchise-container-show {
+    display: flex;
+    animation: bounce 0.5s;
 }

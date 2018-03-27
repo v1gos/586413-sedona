@@ -8,7 +8,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
     <div class="container">
         <header class="main-header">
@@ -90,37 +89,36 @@
                     <button class="purchise-info-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
                 </div>
             </div>
-            <div class="background-map">
-                <div class="registration-purchise-container">
-                    <div class="registration-purchise">
-                        <label for="start-date">дата заезда:</label>
-                        <input type="date" name="start-date" id="start-date">
+            <div class="registration-purchise-container">
+                <div class="registration-purchise">
+                    <label for="start-date">дата заезда:</label>
+                    <input type="date" name="start-date" id="start-date">
+                </div>
+                <div class="registration-purchise">
+                    <label for="end-date">дата выезда:</label>
+                    <input type="date" name="end-date" id="end-date">
+                </div>
+                <div class="number-of-customers">
+                    <label for="adult-number">взрослые:</label>
+                    <div class="number-of-person">
+                        <button class="minus-button"></button>
+                        <input type="number" name="adult-number" id="adult-number">
+                        <button class="plus-button"></button>
                     </div>
-                    <div class="registration-purchise">
-                        <label for="end-date">дата выезда:</label>
-                        <input type="date" name="end-date" id="end-date">
-                    </div>
-                    <div class="number-of-customers">
-                        <label for="adult-number">взрослые:</label>
-                        <div class="number-of-person">
-                            <button class="minus-button"></button>
-                            <input type="number" name="adult-number" id="adult-number">
-                            <button class="plus-button"></button>
-                        </div>
-                        <label for="childer-number">дети:</label>
-                        <div class="number-of-person">
-                            <button class="visually-hidden minus-button"></button>
-                            <input type="number" name="childer-number" id="childer-number">
-                            <button class="visually-hidden plus-button"></button>
-                        </div>
-                    </div>
-                    <div class="show-search-result-button">
-                        <input type="submit" name="purchise-info-submit" id="purchise-info-submit" value="найти">
+                    <label for="childer-number">дети:</label>
+                    <div class="number-of-person">
+                        <button class="visually-hidden minus-button"></button>
+                        <input type="number" name="childer-number" id="childer-number">
+                        <button class="visually-hidden plus-button"></button>
                     </div>
                 </div>
+                <div class="show-search-result-button">
+                    <input type="submit" name="purchise-info-submit" id="purchise-info-submit" value="найти">
+                </div>
             </div>
+            <div class="background-map"></div>
         </main>
-        <foother class="main-foother">
+        <foother class="main-foother index-foother">
             <span>#visitsedona</span>
             <div class="social-container">
                 <a class="social social-tw" href="#"></a>
@@ -135,7 +133,13 @@
             </div>
         </foother>
     </div>
-    </div>
+    <script>
+    var jspurchbutton = document.querySelector(".purchise-info-button");
+    var regpopup = document.querySelector(".registration-purchise-container");
+    jspurchbutton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        regpopup.classList.toggle("registration-purchise-container-show");
+    });
+    </script>
 </body>
-
 </html>
