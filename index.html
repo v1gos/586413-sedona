@@ -101,7 +101,7 @@
                     <label for="adult-number">взрослые:</label>
                     <div class="number-of-person">
                         <button class="minus-button"></button>
-                        <input type="number" name="adult-number" id="adult-number">
+                        <input type="number" value="2" name="adult-number" id="adult-number">
                         <button class="plus-button"></button>
                     </div>
                     <label for="childer-number">дети:</label>
@@ -126,19 +126,10 @@
                 <a class="social social-yt" href="#"></a>
             </div>
             <div class="foother-logo">
-                <p>website by</p>
-                <a class="creator-link" href="#">
-                    <img src="img/logo/htmlacademy-logo.svg" alt="Create by HTML-Academy" href="https://htmlacademy.ru" width="118" height="42">
-                </a>
+                <a class="creator-logo" href="#">website by</a>
             </div>
         </foother>
     </div>
-    <script>
-        var jspurchbutton = document.querySelector(".purchise-info-button");
-    var regpopup = document.querySelector(".registration-purchise-container");
-    jspurchbutton.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        regpopup.classList.toggle("registration-purchise-container-show");
-    }); </script>
+    <script src="js/mainjs.js"></script>
 </body>
 </html>

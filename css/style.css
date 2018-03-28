@@ -455,6 +455,16 @@ div .sort .search-result {
     margin-left: auto;
     padding-top: 4px;
 }
+.creator-logo::after {
+	content: "";
+    position: absolute;
+    width: 118px;
+    height: 43px;
+    background-image: url(../img/logo/htmlacademy-logo.svg);
+	background-repeat: no-repeat;
+	top: 40px;
+	right: 75px
+}
 .social-container social-tw {
     background-image: url(../img/icons/tw-icon.svg);
     background-repeat: no-repeat;
@@ -661,7 +671,6 @@ div .sort .search-result {
     background-repeat: no-repeat;
     background-image: url(../img/icons/icon-house.svg);
 }
-.reason-illustration-item h4::before:
 .minus-button,
 .plus-button,
 .number-of-person input {
@@ -669,6 +678,8 @@ div .sort .search-result {
     background-color: #f2f2f2;
     border: none;
     padding: 6px 0;
+	font-weight: bold;
+	text-align: right;
 }
 .social-tw {
     background-image: url(../img/icons/tw-icon.svg);
@@ -694,13 +705,9 @@ div .sort .search-result {
 .social-yt:active {
     background-image: url(../img/icons/youtube-icon%20-%20active.svg);
 }
-.creator-link {
-    width: 116px;
-    margin-left: 6px;
-    
-}
-.foother-logo p {
+.foother-logo a {
     padding-top: 6px;
+	padding-right: 100px;
 }
 .hostels-list {
     padding: 0 72px;
@@ -852,7 +859,7 @@ input[type="radio"].visually-hidden {
 }
 .index-foother {
     position: absolute;
-    width: 1200px;
+	width: 61.821%;
 }
 @keyframes bounce {
   0% {
