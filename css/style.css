@@ -48,6 +48,9 @@ button {
 .reason {
     background-color: #81b3d2;
 }
+textarea:focus, input:focus{
+outline: none;
+}
 .reason-descriptions h3 {
     font-size: 21px;
     color: white;
@@ -60,13 +63,13 @@ button {
 }
 .reason-illustration-item h4,
 .reason-other-container .reason-descriptions h3 {
-    font-size: 21;
+    font-size: 21px;
     color: black;
     text-align: center;
 }
 .reason-illustration-item p,
 .reason-other-container .reason-descriptions p {
-    font-size: 14;
+    font-size: 14px;
     color: #333333;
     text-align: center;
 }
@@ -96,10 +99,9 @@ button {
     color: rgba(254, 254, 254, 0.3)
 }
 .main-foother {
-    background-color: (253, 253, 253, 0.8);
+    background-color: RGBA(253, 253, 253, 0.9);
     display: flex;
     padding: 37px 100px 35px 132px;
-    
 }
 .main-foother span {
     font: inherit;
@@ -235,7 +237,7 @@ div .sort .search-result {
 }
 .reason-descriptions {
     width: auto;
-    padding-top: 159px;
+    padding-top: 160px;
     padding-bottom: 80px;
 }
 .main-navigation ul {
@@ -257,12 +259,14 @@ div .sort .search-result {
 }
 .reason {
     display: flex;
+	height: 256px;
 }
 .reason .large-reason-descriptions h3 {
     color: #ffffff;
 }
 .reason .large-reason-descriptions p {
     color: #e2ecf4;
+	font-size: 14px;
 }
 .large-reason-descriptions {
     color: white;
@@ -271,11 +275,12 @@ div .sort .search-result {
     width: 400px;
 }
 .large-reason-descriptions h3 {
-    width: 160px;
+    width: 157px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 25px;
     color: black;
+	font-size: 21px;
 }
 .large-reason-descriptions p {
     width: 310px;
@@ -487,7 +492,7 @@ div .sort .search-result {
 .registration-purchise-container {
     display: none;
     flex-wrap: wrap;
-    padding-top: 54px;
+    padding: 54px 0;
     justify-content: center;
     flex-direction: column;
     background-color: #ffffff;
@@ -506,6 +511,7 @@ div .sort .search-result {
 .registration-purchise label {
     display: block;
     width: 115px;
+	padding-top: 10px;
 }
 .registration-purchise-container .registration-purchise input {
     width: 346px;
@@ -514,20 +520,21 @@ div .sort .search-result {
 }
 .registration-purchise input:hover {
     background-color: #eaeaea;
-    background-image: url(../img/icons/calendar-icon-hover.svg) no-repeat 98% 50%;
+    background-image: url(../img/icons/calendar-icon-hover.svg);
 }
 .registration-purchise input:focus {
     background-color: #ffffff;
     border: 1px solid #eaeaea;
-    background-image: url(../img/icons/calendar-icon-use.svg) no-repeat 98% 50%;
+    background-image: url(../img/icons/calendar-icon-use.svg);
 }
 .number-of-customers-form {
     display: flex;
     width: 229px;
 }
 .show-search-result-button {
-    padding: 0  55px 55px;
+    padding: 0 auto;
     display: flex;
+	justify-content: center
 }
 .show-search-result-button input {
     width: 458px;
@@ -652,6 +659,7 @@ div .sort .search-result {
     width: 110px;
     margin: 0 auto;
     text-align: center;
+	margin-bottom: 24px;
 }
 .reason-illustration-item p {
     width: 295px;
@@ -661,15 +669,23 @@ div .sort .search-result {
 .reason-illustration-item h4::before {
     content: "";
     position: absolute;
-    width: 79px;
+    width: 75px;
     height: 79px;
-    background-color: black;
-    bottom: 80px;
-    right: 50%;
-    margin-right: -39px;
     background-color: inherit;
     background-repeat: no-repeat;
-    background-image: url(../img/icons/icon-house.svg);
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.reason-illustration-item:nth-of-type(1) h4::before {
+	background-image: url(../img/icons/icon-house.svg);
+}
+.reason-illustration-item:nth-of-type(2) h4::before {
+	background-image: url(../img/icons/food-icon.svg);
+}
+.reason-illustration-item:nth-of-type(3) h4::before {
+	background-image: url(../img/icons/icon-gift.svg);
+	left: 52%;
 }
 .minus-button,
 .plus-button,
@@ -754,7 +770,11 @@ div .sort .search-result {
     display: flex;
 }
 .registration-purchise input {
-    background: url("../img/icons/calendar-icon.svg") no-repeat 98% 50%;
+    background-image: url("../img/icons/calendar-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 96%;
+	background-size: 21px 20px;
+	padding: 11px 0 11px 11px;
 }
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -830,6 +850,12 @@ input[type="radio"].visually-hidden {
     transform: translate(-50%, -50%);
     content: "";
 }
+.minus-button:hover::before, .minus-button:hover::after, .plus-button:hover::before, .plus-button:hover::after {
+	background-color: black;
+}
+.minus-button:active::before, .minus-button:active::after, .plus-button:active::before, .plus-button:active::after {
+	background-color: #7eb2d0;
+}
 .plus-button::before {
     width: 12px;
     height: 3px;
@@ -858,8 +884,12 @@ input[type="radio"].visually-hidden {
     color: #bebebe;
 }
 .index-foother {
+	content: "";
     position: absolute;
-	width: 61.821%;
+	width: 968px;
+    bottom: -212%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 @keyframes bounce {
   0% {
