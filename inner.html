@@ -11,12 +11,12 @@
     <div class="container">
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-page-link" href="index.html"><img src="img/logo/sedona-logo.png" alt="Sedona" width="138" height="70"></a>
+                <img class="main-page-link" src="img/logo/sedona-logo.png" alt="Sedona" width="138" height="70">
                 <ul class="header-menu">
                     <li><a class="menu-link" href="info">информация</a></li>
                     <li><a class="menu-link" href="media">фото и видео</a></li>
                     <li><a class="menu-link" href="map">карта штата</a></li>
-                    <span class="current">гостиницы</span>
+                    <li class="current">гостиницы</li>
                 </ul>
             </nav>
         </header>
@@ -25,7 +25,9 @@
             <div class="promo-block promo-block-inner">
                 <fieldset class="inner-filters checkboxes-container">
                     <ul class="type-checkboxes">
-                        <legend>инфраструктура:</legend>
+                        <li class="checkboxes-header">
+							<legend>инфраструктура:</legend>
+						</li>
                         <li>
                             <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="pool-choise" checked>
                             <label for="pool-choise">бассейн</label>
@@ -42,7 +44,9 @@
                 </fieldset>
                 <fieldset class="inner-filters checkboxes-container">
                     <ul class="type-checkboxes">
-                        <legend>тип жилья:</legend>
+                        <li class="checkboxes-header">
+							<legend>тип жилья:</legend>
+						</li>
                         <li>
                             <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hostel" id="hostel-choise" checked>
                             <label for="hostel-choise">гостиница</label>
@@ -197,18 +201,18 @@
                 </div>
             </div>
         </main>
-        <foother class="main-foother">
+        <footer class="main-footer">
             <span>#visitsedona</span>
             <div class="social-container">
                 <a class="social social-tw" href="#"></a>
                 <a class="social social-fb" href="#"></a>
                 <a class="social social-yt" href="#"></a>
             </div>
-            <div class="foother-logo">
+            <div class="footer-logo">
                 <a class="creator-logo" href="#">website by</a>
                 <a class="creator-logo-image-container" href="#"></a>
             </div>
-        </foother>
+        </footer>
     </div>
 </body>
 </html>

@@ -39,7 +39,7 @@ button {
 	line-height: 26px;
 	color: #000;
 }
-.header-menu span {
+.header-menu .current {
 	font-weight: bold;
 	line-height: 26px;
 	text-align: right;
@@ -110,7 +110,7 @@ input:focus {
 	color: rgba(254, 254, 254, .3);
 	background-color: #514038;
 }
-.main-foother {
+.main-footer {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -120,7 +120,7 @@ input:focus {
 	padding: 37px 6%;
 	background-color: RGBA(255, 255, 255, .9);
 }
-.main-foother span {
+.main-footer span {
 	font: inherit;
 	font-size: 21px;
 	font-weight: bold;
@@ -455,7 +455,7 @@ input {
 .checkboxes-container {
 	margin-right: 75px;
 }
-.inner-filters legend {
+.inner-filters li legend {
 	width: 180px;
 }
 .price-controls {
@@ -595,7 +595,7 @@ input {
 	display: flex;
 	margin-left: 257px;
 }
-.foother-logo {
+.footer-logo {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -660,6 +660,9 @@ input {
 	width: 115px;
 	padding-top: 12px;
 	letter-spacing: .4px;
+}
+.checkboxes-header {
+	letter-spacing: 0.3px;
 }
 .registration-purchise-container .registration-purchise input {
 	width: 346px;
@@ -826,6 +829,9 @@ input {
 	margin: 0 auto;
 	text-align: center;
 }
+.iframe-google-map {
+	border: none;
+}
 .reason-illustration-item h4::before {
 	position: absolute;
 	bottom: 80%;
@@ -895,7 +901,7 @@ input {
 	margin-right: 26px;
 	margin-bottom: 5px;
 }
-.foother-logo .creator-logo-image-container {
+.footer-logo .creator-logo-image-container {
 	display: block;
 	width: 118px;
 	background-image: url(../img/logo/htmlacademy-logo.svg);
@@ -998,7 +1004,7 @@ input[type='radio'].visually-hidden {
 	-ms-user-select: none;
 	user-select: none;
 }
-.type-checkboxes li {
+.type-checkboxes li:not(.checkboxes-header) {
 	margin-top: 23px;
 }
 .type-checkboxes li label {
@@ -1131,7 +1137,7 @@ second-purchise-argument label {
 .menu-link:active {
 	color: #bebebe;
 }
-.index-foother {
+.index-footer {
 	position: absolute;
 	bottom: 0;
 	left: 0;
