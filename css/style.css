@@ -479,8 +479,8 @@ input {
 	display: -ms-flexbox;
 	display: flex;
 	padding: 34px 70px 32px;
-	border-color: #e5e5e5;
 	border-bottom: 1px solid;
+	border-color: #e5e5e5;
 	background-color: #fff;
 }
 .search-result {
@@ -574,8 +574,8 @@ input {
 	display: flex;
 	padding: 28px 6% 32px;
 	padding-bottom: 30px;
-	border-color: #e5e5e5;
 	border-bottom: 1px solid;
+	border-color: #e5e5e5;
 }
 .visual-rating {
 	width: 24px;
@@ -1109,10 +1109,10 @@ second-purchise-argument label {
 }
 .plus-button::after {
 	position: absolute;
-	top: 45%;
-	left: 35%;
+    top: 45.8%;
+    left: 36%;
 	width: 10px;
-	height: 3px;
+	height: 3.2px;
 	content: '';
 	-webkit-transform: translate(-50%, -50%);
 	-webkit-transform: rotate(90deg);
