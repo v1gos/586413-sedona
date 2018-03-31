@@ -130,7 +130,7 @@ input:focus {
 fieldset {
 	border: none;
 }
-fieldset legend {
+.checkboxes-header p, .inner-filters legend {
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
@@ -453,7 +453,7 @@ input {
 	-ms-flex-direction: column;
 }
 .checkboxes-container {
-	margin-right: 75px;
+	margin-right: 115px;
 }
 .inner-filters li legend {
 	width: 180px;
@@ -572,8 +572,7 @@ input {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 28px 6% 32px;
-	padding-bottom: 30px;
+	padding: 30px 6% 30px;
 	border-bottom: 1px solid;
 	border-color: #e5e5e5;
 }
