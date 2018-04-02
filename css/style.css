@@ -455,9 +455,6 @@ input {
 .checkboxes-container {
 	margin-right: 115px;
 }
-.inner-filters li legend {
-	width: 180px;
-}
 .price-controls {
 	font-size: 16px;
 	font-weight: bold;
@@ -655,7 +652,7 @@ input {
 }
 .registration-purchise-calendar {
 	width: 24px;
-	height: 23px;
+	height: 24px;
 	position: absolute;
 	background-image: url(../img/icons/calendar-icon.svg);
 	background-repeat: no-repeat;
@@ -664,8 +661,8 @@ input {
 	content: "";
 	display: block;
 	border: none;
-	background-color: inherit;
 	background-position: center;
+	background-color: inherit;
 }
 .registration-purchise-calendar:hover {
 	background-image: url(../img/icons/calendar-icon-hover.svg);
@@ -702,7 +699,7 @@ input {
 .checkboxes-header {
 	letter-spacing: 0.3px;
 }
-.registration-purchise-container .registration-purchise input {
+.registration-purchise input {
 	width: 346px;
 	background-color: #f2f2f2;
 }
@@ -825,7 +822,7 @@ input {
 	box-sizing: content-box;
 }
 .range-toggle:hover {
-	background: #1c4f80;
+	border: 9px solid #fff;
 }
 .range-toggle-min {
 	left: 0;
@@ -1054,6 +1051,12 @@ input[type='radio'].visually-hidden {
 	content: '';
 	background-image: url(../img/icons/checkbox-off.svg);
 	background-repeat: no-repeat;
+}
+.type-checkboxe input:before:disabled {
+	background-image: url(../img/icons/checkbox-off-disabled.svg);
+}
+.type-checkboxe input:before:after {
+	background-image: url(../img/icons/checkbox-on-disabled.svg);
 }
 .filter-input-checkbox:checked + label::after {
 	position: absolute;
