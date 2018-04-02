@@ -115,15 +115,21 @@ input:focus {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
-	padding: 37px 6%;
+	padding: 34px 6%;
 	background-color: RGBA(255, 255, 255, .9);
 }
 .main-footer span {
 	font: inherit;
 	font-size: 21px;
 	font-weight: bold;
-	margin-left: 60px;
-	padding-top: 12px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 13px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 256px;
 }
 fieldset {
 	border: none;
@@ -593,14 +599,20 @@ input {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-left: 257px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 540px;
 }
 .footer-logo {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-left: auto;
 	padding-top: 4px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 260px;
 }
 .social-container .social-tw {
 	display: center;
@@ -625,6 +637,8 @@ input {
 	position: absolute;
 	z-index: 1;
 	left: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	flex-direction: column;
 	-webkit-box-sizing: border-box;
@@ -820,6 +834,7 @@ input {
 	background: #ababab;
 	-webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
+	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
 }
 .range-toggle:hover {
@@ -928,12 +943,11 @@ input {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-right: 8px;
-	padding-top: 7px;
+	margin-right: 6px;
+	padding-top: 10px;
 	color: #000;
 }
 .creator-logo-image-container {
-	margin-right: 26px;
 	margin-bottom: 5px;
 }
 .footer-logo .creator-logo-image-container {
@@ -953,7 +967,6 @@ input {
 	background-color: #fff;
 }
 .open-product a {
-	/* костыль */
 	display: block;
 	margin-top: 3px;
 }
