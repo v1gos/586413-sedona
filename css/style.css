@@ -49,7 +49,7 @@ button {
 	background-color: #81b3d2;
 }
 textarea:focus,
-	input:focus {
+input:focus {
 	outline: none;
 }
 .reason-descriptions h3 {
@@ -128,7 +128,8 @@ textarea:focus,
 fieldset {
 	border: none;
 }
-.inner-filters p, .inner-filters legend {
+.inner-filters p,
+.inner-filters legend {
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
@@ -656,8 +657,8 @@ input {
 	position: absolute;
 	background-image: url(../img/icons/calendar-icon.svg);
 	background-repeat: no-repeat;
-    top: 10px;
-    right: 6px;
+	top: 10px;
+	right: 6px;
 	content: "";
 	display: block;
 	border: none;
@@ -1151,8 +1152,8 @@ second-purchise-argument label {
 }
 .plus-button::after {
 	position: absolute;
-    top: 45.8%;
-    left: 36%;
+	top: 45.8%;
+	left: 36%;
 	width: 10px;
 	height: 3.2px;
 	content: '';
