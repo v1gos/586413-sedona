@@ -5,7 +5,7 @@
 	<title>HTML Academy: Седона</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 		</header>
 		<main class="main-content">
 			<h1 class="hidden">Отели Седона</h1>
-			<div class="promo-block promo-block-inner">
+			<form method="get" action="https://echo.htmlacademy.ru" class="promo-block promo-block-inner">
 				<fieldset class="inner-filters checkboxes-container">
 					<p class="checkboxes-header">инфраструктура:</p>
 					<ul class="type-checkboxes">
@@ -58,7 +58,7 @@
 						</li>
 					</ul>
 				</fieldset>
-				<form method="get" action="https://echo.htmlacademy.ru" class="inner-filters filter-range">
+				<div class="inner-filters filter-range">
 					<p>Стоимость в сутки (р):</p>
 					<div class="price-controls">
 						<label class="min-price">от
@@ -76,8 +76,8 @@
 						<button aria-label="Максимальная цена" class="range-toggle range-toggle-max"></button>
 					</div>
 					<button class="btn-transparent" type="submit">Показать</button>
-				</form>
-			</div>
+				</div>
+			</form>
 			<div class="result">
 				<div class="sort">
 					<span class="search-result">найдено: 3</span>
