@@ -7,32 +7,9 @@ body {
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 }
-a {
-	text-decoration: none;
-}
-h2,
-p,
-h3,
-h4 {
-	margin: 0;
-}
-fieldset {
+.range-controls button {
 	margin: 0;
 	padding: 0;
-}
-ul {
-	margin: 0;
-	padding: 0;
-}
-li {
-	list-style: none;
-}
-button {
-	margin: 0;
-	padding: 0;
-}
-.hidden {
-	display: none;
 }
 .header-menu a {
 	font-weight: bold;
@@ -45,13 +22,13 @@ button {
 	text-align: right;
 	color: #766357;
 }
+.reason-illustration-item h4 {
+	margin: 0;
+}
 .reason {
 	background-color: #81b3d2;
 }
-textarea:focus,
-input:focus {
-	outline: none;
-}
+
 .reason-descriptions h3 {
 	font-size: 21px;
 	text-align: center;
@@ -91,9 +68,9 @@ input:focus {
 	display: -ms-flexbox;
 	display: flex;
 	background-color: #eee;
-}
-.purchase-offer h3 {
-	font-size: 30px;
+	list-style: none;
+	padding: 0;
+    margin: 0;
 }
 .purchise-info-button {
 	font: inherit;
@@ -115,7 +92,7 @@ input:focus {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
-	padding: 34px 6%;
+	padding: 38px 6%;
 	background-color: RGBA(255, 255, 255, .9);
 }
 .main-footer span {
@@ -131,29 +108,36 @@ input:focus {
 	justify-content: center;
 	width: 256px;
 }
-fieldset {
+.inner-filters {
 	border: none;
-}
-.filter-range p {
-	margin-bottom: 8px;
+	padding: 0;
+	margin: 0;
 }
 .inner-filters p,
 .inner-filters legend {
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
+	padding: 0;
+	margin: 0;
 }
 .filter-range legend {
 	margin-bottom: 8px;
 }
-fieldset li,
+.inner-filters li,
 .filter-range p,
 .show-inner-result {
 	color: #fff;
 }
+.filter-range p {
+	margin-bottom: 8px;
+}
 .sort .search-result {
 	font-size: 21px;
 	font-weight: bold;
+}
+.sort p {
+	margin: 0;
 }
 .sort p,
 .sort a {
@@ -196,6 +180,7 @@ fieldset li,
 	width: 234px;
 	margin-bottom: 8px;
 	color: #000000;
+	text-decoration: none;
 }
 .hostel-name:hover {
 	color: #81b3d2;
@@ -220,11 +205,6 @@ fieldset li,
 }
 .price {
 	width: 72px;
-}
-input {
-	outline: none;
-}
-.price {
 	text-align: right;
 }
 .buttons-group button {
@@ -304,9 +284,10 @@ input {
 	width: 400px;
 }
 .reason-descriptions {
-	width: auto;
 	padding-top: 160px;
 	padding-bottom: 80px;
+	margin: 0;
+	padding-left: 0;
 }
 .header-menu li,
 .header-menu span {
@@ -372,6 +353,8 @@ input {
 	display: flex;
 	width: 100%;
 	background-color: #fff;
+	box-sizing: border-box;
+	list-style: none;
 }
 .reason-image {
 	width: 800px;
@@ -401,8 +384,11 @@ input {
 	padding: 55px 312px 0;
 }
 .purchase-offer h3 {
+	margin: 0;
 	margin-bottom: 32px;
 	padding: 0 50px;
+	font-size: 30px;
+	line-height: 0.9;
 }
 .purchase-offer p {
 	line-height: 24px;
@@ -485,7 +471,7 @@ input {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 34px 70px 32px;
+	padding: 34px 70px 25px;
 	border-bottom: 1px solid;
 	border-color: #e5e5e5;
 	background-color: #fff;
@@ -511,6 +497,9 @@ input {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 .sort-by-properties a {
 	display: block;
@@ -524,6 +513,7 @@ input {
 	display: flex;
 	width: 44px;
 	margin-left: auto;
+	list-style: none;
 }
 .arrow-up {
 	bottom: -6px;
@@ -582,7 +572,7 @@ input {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 30px 6% 30px;
+	padding: 30px 6% 16px;
 	border-bottom: 1px solid;
 	border-color: #e5e5e5;
 }
@@ -597,6 +587,7 @@ input {
 	font-weight: bold;
 	padding: 3px 17px;
 	color: white;
+	text-decoration: none;
 }
 .social-container {
 	display: -webkit-box;
@@ -611,7 +602,6 @@ input {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding-top: 4px;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
@@ -635,6 +625,14 @@ input {
 }
 .social-container a:active {
 	background-color: #5295ba;
+}
+.registration-purchise-container textarea:focus,
+.registration-purchise-container input:focus {
+	outline: none;
+}
+.promo-block textarea:focus,
+.promo-block input:focus {
+	outline: none;
 }
 .registration-purchise-container {
 	position: absolute;
@@ -716,6 +714,7 @@ input {
 }
 .checkboxes-header {
 	letter-spacing: 0.3px;
+	margin: 0;
 }
 .registration-purchise input {
 	width: 346px;
@@ -882,6 +881,7 @@ input {
 }
 .iframe-google-map {
 	border: none;
+	position: absolute;
 }
 .reason-illustration-item h4::before {
 	position: absolute;
@@ -946,12 +946,10 @@ input {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-right: 6px;
-	padding-top: 10px;
+    margin-right: 10px;
+    padding-top: 14px;
 	color: #000;
-}
-.creator-logo-image-container {
-	margin-bottom: 5px;
+	text-decoration: none;
 }
 .footer-logo .creator-logo-image-container {
 	display: block;
@@ -1009,7 +1007,6 @@ input {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
-	/* с расчетом до 5 звезд */
 }
 .visual-rating-container {
 	display: -webkit-box;
@@ -1029,7 +1026,8 @@ input {
 	border: 1px solid #fff;
 }
 input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
+input[type='radio'].visually-hidden,
+h1.visually-hidden {
 	position: absolute;
 	overflow: hidden;
 	clip: rect(0 0 0 0);
@@ -1041,6 +1039,11 @@ input[type='radio'].visually-hidden {
 	border: 0;
 	-webkit-clip-path: inset(100%);
 	clip-path: inset(100%);
+}
+.type-checkboxes {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 .type-checkboxes label {
 	position: relative;
@@ -1230,11 +1233,30 @@ second-purchise-argument label {
 		transform: translateX(-285px);
 	}
 }
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-285px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90%  {
+    transform: translateX(-295px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-275px);
+  }
+}
+.modal-error {
+	animation: shake 0.6s;
+}
 .registration-purchise-container-hide {
 	display: none;
-}
-iframe {
-	position: absolute;
 }
 .index-promo-block {
 	position: relative;
@@ -1254,4 +1276,14 @@ iframe {
 .sort-direction a {
 	width: 20px;
 	height: 20px;
+}
+.header-menu li, reason-descriptions {
+	list-style: none;
+}
+.main-navigation ul, reason-descriptions {
+	margin: 0;
+	padding: 0;
+}
+.header-menu a {
+	text-decoration: none;
 }
