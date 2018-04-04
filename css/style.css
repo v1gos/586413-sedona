@@ -177,7 +177,6 @@ body {
 	font-size: 21px;
 	font-weight: bold;
 	display: block;
-	width: 234px;
 	margin-bottom: 8px;
 	color: #000000;
 	text-decoration: none;
@@ -266,6 +265,9 @@ body {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
+.type-checkboxes input:focus + label:before {
+	outline: 2px solid #a5c7fc;
+}
 .promo-block {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -322,8 +324,10 @@ body {
 	box-sizing: border-box;
 	width: 400px;
 	padding-top: 46px;
-	padding-bottom: 40px;
 	color: white;
+}
+.reason-other-container li {
+	padding-bottom: 40px;
 }
 .large-reason-descriptions h3 {
 	font-size: 21px;
@@ -399,7 +403,7 @@ body {
 	font-size: 21px;
 	font-weight: bold;
 	width: 570px;
-	padding: 32px 130px;
+	padding: 32px;
 	color: white;
 }
 .current {
@@ -503,7 +507,7 @@ body {
 }
 .sort-by-properties a {
 	display: block;
-	width: 82px;
+	width: 86px;
 	text-align: center;
 }
 .sort-direction {
@@ -511,7 +515,6 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	width: 44px;
 	margin-left: auto;
 	list-style: none;
 }
@@ -525,6 +528,8 @@ body {
 }
 .sort-direction li {
 	position: absolute;
+	right: 6px;
+    top: -8px;
 }
 .arrow-up a,
 .arrow-down a {
@@ -883,10 +888,10 @@ body {
 	border: none;
 	position: absolute;
 }
-.reason-illustration-item h4::before {
+.reason-descriptions li::before {
 	position: absolute;
-	bottom: 80%;
-	left: 50%;
+    top: -61px;
+    left: 200px;
 	width: 75px;
 	height: 79px;
 	content: '';
@@ -895,16 +900,15 @@ body {
 	transform: translate(-50%, -50%);
 	background-color: inherit;
 	background-repeat: no-repeat;
-}
-.reason-illustration-item:nth-of-type(1) h4::before {
 	background-image: url(../img/icons/icon-house.svg);
 }
-.reason-illustration-item:nth-of-type(2) h4::before {
+.reason-descriptions li:nth-child(2)::before {
 	background-image: url(../img/icons/food-icon.svg);
 }
-.reason-illustration-item:nth-of-type(3) h4::before {
-	left: 51%;
+.reason-descriptions li:nth-child(3)::before {
 	background-image: url(../img/icons/icon-gift.svg);
+	top: -65px;
+    left: 206px;
 }
 .minus-button,
 .plus-button,
@@ -981,7 +985,7 @@ body {
 	height: 100%;
 }
 .hostel-info {
-	width: 259px;
+	width: 350px;
 	margin-left: 30px;
 }
 .buttons-group {
